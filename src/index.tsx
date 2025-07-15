@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import InfoMaps from "./component/infoMaps/InfoMaps";
 import Slader from "./component/slader/Slader";
 import KakaetoXrenVNizy from "./component/kakaetoXrenVNizy/KakaetoXrenVNizy";
-import Fotter from "./footer/Fotter";
+import Fotter from "./component/footer/Fotter";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
