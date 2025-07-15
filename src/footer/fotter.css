@@ -1,0 +1,74 @@
+.fotter {
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.fotter__left {
+    max-width: 300px;
+    margin-left: 15%;
+}
+
+.fotter__logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.fotter__powered {
+    font-size: 0.9rem;
+    color: var(--footer-link-color);
+    margin-bottom: 1rem;
+}
+
+.fotter__icons img {
+    width: 20px;
+    margin-right: 12px;
+    opacity: 0.8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.fotter__icons img:hover {
+    opacity: 1;
+}
+
+.fotter__copyright {
+    font-size: 0.8rem;
+    color: var(--footer-link-color);
+    margin-top: 1rem;
+}
+
+.fotter__right {
+    margin-right: 15%;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.fotter__block h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: var(--footer-heading-color);
+}
+
+.fotter__block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fotter__block ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--footer-link-color);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.fotter__block ul li:hover {
+    color: var(--text-color);
+}

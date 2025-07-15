@@ -1,0 +1,86 @@
+.title {
+    position: relative;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--main-color);
+}
+
+.title__image {
+    position: absolute;
+    max-width: 35%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+.title__image--left {
+    top: 0;
+    left: 0;
+}
+
+.title__image--right {
+    top: 0;
+    right: 0;
+}
+
+.title__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.title__heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+.title__subtext {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.title__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.title__button {
+    font-size: 1em;
+    padding: 0.75em 2em;
+    border-radius: 999px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.title__button--primary {
+    background: var(--button-bg-color-gradient);
+    color: var(--text-color);
+    border: none;
+}
+
+.title__button--primary:hover {
+    opacity: 0.85;
+}
+
+.title__button--secondary {
+    background: transparent;
+    color: var(--text-color);
+}
+
+.title__button--secondary:hover {
+    background: var(--button--secondary-hover);
+}

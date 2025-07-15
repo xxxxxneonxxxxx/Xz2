@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --main-color: black;
+  --text-color: #ffffff;
+  --button-bg-color-gradient: linear-gradient(135deg, #8C01FA 0%, #000000 100%);
+  --button--secondary-hover:rgba(255, 255, 255, 0.1);
+  --button-border-color: #9b47ff;
+  --button-hover-glow: #8C01FA55;
+  --block-number-gradient: linear-gradient(135deg, #19FB9B, #00B2FF, #8C01FA);
+  --block-font-size: clamp(1rem, 2vw, 1.2rem);
+  --block-number-size: clamp(1.5rem, 3vw, 2rem);
+  --block-title-size: clamp(1.6rem, 3vw, 2.5rem);
+  --dot-size: 0.4em;
+  --tab-bg: #111111;
+  --tab-border: #9945ff;
+  --tab-text: #ffffff;
+  --link-color: #9945ff;
+  --footer-bg: #050808;
+  --footer-link-color: #cccccc;
+  --footer-heading-color: #ffffff;
+}
