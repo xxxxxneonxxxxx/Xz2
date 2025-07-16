@@ -26,16 +26,16 @@ export default function BlockInfo() {
             descriptionNumber: "ACTIONS PER SECOND",
             color: '#1FCFF1',
             width:"193px",
-            gradient: 'linear-gradient(90deg,#1FCFF1 0%,#14889F 25%,#225E69 51%,#215761 72%,#0C0C0C 100%)',
+            gradient: 'linear-gradient(90deg, #1FCFF1 0%, #000000 100%)',
         },
         {
             Title: "Decentralized",
             description: "Upgrades. Implants. Reflex boosters. The system bends to your enhancement tree.",
             number: "92",
             descriptionNumber: "SKILL MODS AND UPGRADES",
-            color:'#FFD512',
-            width:"250px",
-            gradient:'linear-gradient(90deg,#FFD512 0%,#000000 100%)',
+            color:'#C4A600',
+            width:"193px",
+            gradient:'linear-gradient(90deg, #C4A600 0%, #000000 100%)',
         },
         {
             Title: "Efficient",
@@ -43,8 +43,8 @@ export default function BlockInfo() {
             number: "4",
             descriptionNumber: "ESISTANCE CELLS ACROSS DHARMA TOWER",
             color:'#19FB9B',
-            width:'250px',
-            gradient:'linear-gradient(90deg,#19FB9B 0%,#052F1D 81%,#000000 100%)',
+            width:'193px',
+            gradient:'linear-gradient(90deg, #19FB9B 0%, #000000 100%)',
         },
         {
             Title: "Scalable",
@@ -53,7 +53,7 @@ export default function BlockInfo() {
             descriptionNumber: "WASTED TIME",
             color:"#9945FF",
             width:'193px',
-            gradient:"linear-gradient(90deg,#9945FF 0%,#040207 97%,#000000 100%)",
+            gradient:"linear-gradient(90deg, #9945FF 0%, #000000 100%)",
         }
     ]);
     const controlsLines = useRef([
@@ -72,8 +72,7 @@ export default function BlockInfo() {
     return (
         <section className="block-info"
                  style={{
-                     backgroundImage: `url(${bg})`,
-
+                     backgroundImage: `url(${bg})`
                  }}
         >
             <div className="block-info__intro">

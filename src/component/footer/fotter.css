@@ -10,7 +10,6 @@
 
 .fotter__left {
     max-width: 300px;
-    margin-left: 15%;
 }
 
 .fotter__logo {
@@ -44,7 +43,6 @@
 }
 
 .fotter__right {
-    margin-right: 15%;
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;

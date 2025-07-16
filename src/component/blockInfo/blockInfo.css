@@ -64,9 +64,11 @@
 
 .block-info__line {
     width: 3px;
-    height: 30.5px;
-    border-radius: 1px;
+    height: 30px;
     border: none;
+    z-index: 1;
+    position: absolute;
+    border-radius: 2px;
     background: white;
 }
 
@@ -75,8 +77,8 @@
     width: 100%;
     font-size: 1.1rem;
     font-weight: 500;
-    border-top-right-radius:100px;
-    border-bottom-right-radius:100px;
+    z-index: 5;
+
 }
 
 .block-info__description {

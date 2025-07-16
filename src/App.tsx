@@ -11,7 +11,9 @@ import Fotter from "./component/footer/Fotter";
 
 export default function App(){
     return (
-        <div>
+        <div style={{
+            backgroundColor: "var(--main-color)",
+        }}>
             <Header />
             <Title />
             <BlockNumber />

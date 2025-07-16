@@ -1,7 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 import {BlockInfoProps} from "../BlockInfo";
-import dot from "../img/dot.svg";
+
 type Props = {
     item:BlockInfoProps;
     i:number;
@@ -9,64 +9,47 @@ type Props = {
     controlsLabels:any;
 }
 
-export default function BlockInfoAnimationLabel({item,i,controlsLabels,controlsLines}: Props) {
+export default function BlockInfoAnimationLabel({item,i,controlsLines}: Props) {
     return (
             <motion.div className="block-info__header"
                         onMouseEnter={() =>{
-                            controlsLabels[i].start({
-                                backgroundPosition: "100% 150%",
-                                transition:{
-                                    duration:1,
-                                    ease:"easeInOut",
-                                }
-                            })
                             controlsLines[i].start({
-                                width:"10px",
+                                width:item.width,
+                                borderTopLeftRadius:"10px",
+                                borderBottomLeftRadius:"10px",
+                                backgroundPosition: "100% 200%",
                                 transition: {
                                     duration: 1,
                                     ease: "linear"
                                 }
                             })
-                        }
-
-                        }
-
+                        }}
                         onMouseLeave={() =>{
-                            controlsLabels[i].start({
-                                backgroundPosition: "200% 0%",
-                                borderRadius:"1px",
+                            controlsLines[i].start({
+                                width:"3px",
+                                borderTopLeftRadius:"2px",
+                                borderBottomLeftRadius:"2px",
+                                backgroundPosition: "0% 0%",
                                 transition: {
-                                    duration: 1.2,
+                                    duration: 1,
                                     ease: "linear"
                                 }
                             })
-                            controlsLines[i].start({
-                                    width:"3px",
-                                    transition: {
-                                        duration: 0.6,
-                                        ease: "linear"
-                                    }
-                                }
-                            )}}>
+                        }}
+            >
                 <motion.div
                     style={{
-                        background: item.color,
+                        background: item.gradient,
+                        backgroundSize: "150% 100%",
+                        backgroundPosition: "0% 0%",
+                        backgroundRepeat: "no-repeat",
+                        borderBottomRightRadius:"2px",
+                        borderTopRightRadius:"2px",
                     }}
                     className="block-info__line"
                     animate={controlsLines[i]}
                 />
                 <motion.label
-                    animate={controlsLabels[i]}
-                    initial={{
-                        backgroundPosition: "200% 0%",
-                    }}
-                    style={{
-                        background: item.gradient,
-                        backgroundSize: "200% 100%",
-                        backgroundPosition: "200% 0%",
-                        backgroundRepeat: "no-repeat",
-                        color: "#fff",
-                    }}
                     className="block-info__label"
                 >
                     {item.Title}
